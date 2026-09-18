@@ -16,31 +16,12 @@ free [TVMaze API](https://www.tvmaze.com/api) (no API key required).
   with the ✕ button, the Escape key, or a click on the backdrop
 - Fully responsive: single column on mobile, up to 4 columns on desktop
 
-## Tech stack
+## 🧩 Tech stack
 
 - React 18 + Vite
 - React Router
 - Tailwind CSS
 - TVMaze REST API
-
-## Getting started
-
-```bash
-# 1. Install dependencies
-npm install
-
-# 2. Run the dev server
-npm run dev
-```
-
-The app will be available at `http://localhost:5173`.
-
-To build for production:
-
-```bash
-npm run build
-npm run preview   # preview the production build locally
-```
 
 ## Project structure
 
@@ -69,11 +50,10 @@ src/
 
 ## Deployment
 
-This project deploys as-is to **Vercel** or **Netlify**:
+This project deploys as-is to **Vercel**:
 
 - **Vercel:** import the repo, framework preset "Vite", build command
   `npm run build`, output directory `dist`.
-- **Netlify:** same build command and publish directory `dist`.
 
 ## License
 
