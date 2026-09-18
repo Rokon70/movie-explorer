@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ink text-cream font-body antialiased;
+}
+
+/* Visible keyboard focus everywhere, styled to match the theme */
+:focus-visible {
+  outline: 2px solid #E8B54D;
+  outline-offset: 3px;
+}
+
+/* Subtle film-grain texture used behind the hero, drawn as pure CSS
+   so no external image is required */
+.grain {
+  background-image: radial-gradient(rgba(245, 243, 238, 0.05) 1px, transparent 1px);
+  background-size: 3px 3px;
+}
+
+/* Thin custom scrollbar for the modal body */
+.thin-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.thin-scroll::-webkit-scrollbar-thumb {
+  background-color: #2b2f45;
+  border-radius: 999px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
