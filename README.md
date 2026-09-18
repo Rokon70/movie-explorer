@@ -1,5 +1,7 @@
 # 🎬 MovieExplorer
 
+🔗 **Live Demo:** [https://movie-explorer-tau-rosy.vercel.app](https://movie-explorer-tau-rosy.vercel.app)
+
 A responsive movie & TV show explorer built with React, Vite, and Tailwind CSS.
 Browse shows, search by title, and view details in a modal — all powered by the
 free [TVMaze API](https://www.tvmaze.com/api) (no API key required).
