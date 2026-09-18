@@ -8,7 +8,7 @@ const navLinkClasses = ({ isActive }) =>
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-white/5 bg-ink/90 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
         <NavLink to="/" className="flex items-center gap-2 font-display text-xl font-semibold text-cream">
           <span aria-hidden="true">🎬</span>
           MovieExplorer

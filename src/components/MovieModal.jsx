@@ -16,7 +16,6 @@ export default function MovieModal({ movie, onClose }) {
     }
     document.addEventListener('keydown', handleKeyDown)
 
-    // Prevent background scroll while the modal is open
     const originalOverflow = document.body.style.overflow
     document.body.style.overflow = 'hidden'
 

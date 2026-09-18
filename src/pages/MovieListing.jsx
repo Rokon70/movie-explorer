@@ -26,8 +26,7 @@ export default function MovieListing() {
         if (!response.ok) throw new Error('Request failed')
         const data = await response.json()
 
-        // The search endpoint wraps each result as { score, show }.
-        // The /shows endpoint returns show objects directly.
+        // The search { score, show }.
         const normalized = query.trim() ? data.map((entry) => entry.show) : data
 
         setMovies(normalized)
